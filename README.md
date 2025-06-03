@@ -4,18 +4,6 @@
 <h2 align="center"> <a target="_blank" href="https://ranierivan.github.io/" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https://ranierivan.github.io/&form_factor=desktop">Page Speed (100%) 🚀</a>
 </h2>
 
-## Key Features
-
-- Supports Contact Form
-- Disqus Comment Support
-- Related Posts Suggestion
-- MDX Support with many built-in custom components
-- Semantic HTML Document Structure
-- Custom Logo Support
-- Includes All SCSS Files
-- Taxonomy Page Support
-- Images Optimized With Astro-Image
-
 <!-- installation -->
 ## Installation
 
