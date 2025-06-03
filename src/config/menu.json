@@ -1,0 +1,37 @@
+{
+    "main": [
+        {
+            "name": "Who I Am",
+            "url": "#who-i-am"
+        },
+        {
+            "name": "Education",
+            "url": "#education"
+        },
+        {
+            "name": "Keys",
+            "url": "#keys"
+        },
+        {
+            "name": "History",
+            "url": "#employment-history"
+        },
+        {
+            "name": "IT Skills",
+            "url": "#it-skills"
+        },
+
+        {
+            "name": "Projects",
+            "url": "#projects"
+        },
+        {
+            "name": "Interests",
+            "url": "#interests"
+        },
+        {
+            "name": "Contacts",
+            "url": "#contacts"
+        }
+    ]
+}

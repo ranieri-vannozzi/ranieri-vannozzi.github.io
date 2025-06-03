@@ -1,0 +1,21 @@
+---
+const { className } = Astro.props;
+import config from "@/config/config.json";
+---
+<section class={className}>
+  <div class="rounded border border-border p-12 lg:p-9 h-full">
+    <ul class="flex items-center space-x-4">
+      <h4 class="text-primary">Key Competencies</h4>
+    </ul>
+    <p class="my-4">
+    {
+    config.curriculum.keyCompetencies.map((edu) => (
+      <li style="">{edu}
+      </li>
+      <br/>
+    ))
+  }
+  </p>
+  </div>
+</section>
+

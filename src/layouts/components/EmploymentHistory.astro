@@ -1,0 +1,37 @@
+---
+const { className } = Astro.props;
+import config from "@/config/config.json";
+
+export interface IJob {
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  responsibilities: string[];
+}
+---
+<section class={className} id="employment-history">
+  <div class="rounded border border-border p-12 lg:p-9 h-full">
+    <ul class="flex items-center space-x-4">
+      <h4 class="text-primary">Employment History</h4>
+    </ul>
+    <p class="my-4">
+    <ul class="space-y-6">
+      {config.curriculum.employmentHistory.map((job: IJob) => (
+        <li class=" border-border pb-4">
+          <h6 class="font-bold">{job.role}</h6>
+          <p class="text-muted-foreground">
+            {job.company} ({job.location})
+          </p>
+          <ul class="list-disc list-inside space-y-1 ">
+            <li class="pl-2 pt-2">{job.period}</li>
+            {job.responsibilities.map((item) => (
+              <li class="pl-2 pt-2">{item}</li>
+            ))}
+          </ul>
+        </li>
+      ))}
+    </ul>
+    </p>
+  </div>
+</section>
