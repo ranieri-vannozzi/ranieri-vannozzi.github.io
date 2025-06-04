@@ -4,5 +4,6 @@ const { skillType, skillList } = Astro.props
 
 <p class="text-primary my-4">{skillType}</p>
 <p class="my-4">
-    {skillList.map((skill: String) => <li style="">{skill}</li>)}
+    {skillList.map((skill: String) => <li class="mb-5">{skill}</li>)}
+    <p class="h-2"></p>
 </p>

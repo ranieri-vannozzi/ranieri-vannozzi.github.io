@@ -10,7 +10,7 @@ export interface IJob {
     location: string
     responsibilities: string[]
 }
-export const maxH = '1800px'
+export const maxH = '1600px'
 ---
 
 <section
@@ -30,7 +30,7 @@ export const maxH = '1800px'
                 <ul class="space-y-6">
                     {
                         career.map((job: IJob) => (
-                            <li class=" border-border pb-4">
+                            <li class="border-b border-border pb-4 last:border-b-0">
                                 <h6 class="font-bold">{job.role}</h6>
                                 <p class="text-muted-foreground">
                                     {job.company} ({job.location})
@@ -49,7 +49,7 @@ export const maxH = '1800px'
         </div>
         <div
             id="career-plus"
-            class="text-center mt-4 cursor-pointer"
+            class="text-center mt-12 cursor-pointer"
             onclick="
               const div1 = document.getElementById('career-div');
               const plus1 = document.getElementById('career-plus');

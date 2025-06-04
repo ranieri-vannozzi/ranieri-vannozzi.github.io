@@ -11,16 +11,16 @@ import projects from '@/config/projects.json'
         <h4 class="text-primary mb-4">Personal Projects</h4>
         <ul class="space-y-6">
             {
-                projects.map((exp) => (
-                    <li class="border-border pb-4">
-                        <h5 class="text-md font-bold">{exp.role}</h5>
+                projects.map((prj) => (
+                    <li class="border-b border-border pb-4 last:border-b-0">
+                        <h5 class="text-md font-bold">{prj.role}</h5>
                         <p class="text-muted-foreground">
-                            {exp.company} <br />
-                            {exp.period}
+                            {prj.company} <br />
+                            {prj.period}
                         </p>
-                        <p class="mt-2">{exp.description}</p>
+                        <p class="mt-2">{prj.description}</p>
                         <ul class="list-disc list-inside space-y-1 mt-2">
-                            {exp.achievements.map((item) => (
+                            {prj.achievements.map((item) => (
                                 <li>{item}</li>
                             ))}
                         </ul>
