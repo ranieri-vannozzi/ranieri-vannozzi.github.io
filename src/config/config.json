@@ -64,7 +64,7 @@
             "Agile / Scrum / Kanban Methodologies"
         ],
         "itSkills": {
-            "leadershipAndManagement": ["Leadership", "Agile / Scrum", "Project Management", "Planning & Prioritization"],
+            "leadershipAndManagement": ["Leadership", "Agile / Scrum / Kanban", "Project Management", "Planning & Prioritization"],
             "backendTechnologies": ["Java", "Kotlin", "Node.js", "Spring Boot", "PostgreSQL", "MySQL", "Docker"],
             "frontendTechnologies": ["Angular", "TypeScript", "JavaScript", "CSS", "HTMX", "JSX", "TSX"]
         },
@@ -216,10 +216,13 @@
             }
         ],
         "interestsAndMiscellaneous": [
-            "Contributing to Astro community forums.",
-            "Exploring new web performance techniques.",
-            "Amateur astronomy and astrophotography.",
-            "Reading science fiction novels."
+            "Exploring new technologies and development tools during personal time.",
+            "Taking long road trips to discover new places and local cultures.",
+            "Listening to a wide range of music, from rock to electronic and jazz.",
+            "Spending time outdoors with my family and enjoying nature.",
+            "Reading books across different genres.",
+            "Working on personal projects and learning how to do things independently.",
+            "Enjoying cooking and experimenting with new recipes."
         ]
     }
 }
