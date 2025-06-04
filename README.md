@@ -1,10 +1,3 @@
-<h1 align=center>Ranieri Vannozzi</h1>
-<p align=center>Experienced software engineer with over 15 years in enterprise application development. Passionate about clean architecture, cloud-native technologies, and scalable web platforms. Strong background in leading development teams and delivering robust B2B solutions.
-</p>
-<h2 align="center"> <a target="_blank" href="https://ranierivan.github.io/" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https://ranierivan.github.io/&form_factor=desktop">Page Speed (100%) 🚀</a>
-</h2>
-
-<!-- installation -->
 ## Installation
 
 After downloading the template, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
