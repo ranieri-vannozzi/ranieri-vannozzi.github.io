@@ -1,8 +1,8 @@
 {
     "main": [
         {
-            "name": "Who I Am",
-            "url": "#who-i-am"
+            "name": "Overview",
+            "url": "#overview"
         },
         {
             "name": "Education",
@@ -13,12 +13,12 @@
             "url": "#keys"
         },
         {
-            "name": "History",
+            "name": "Career",
             "url": "#career"
         },
         {
-            "name": "IT Skills",
-            "url": "#it-skills"
+            "name": "Skills",
+            "url": "#skills"
         },
 
         {

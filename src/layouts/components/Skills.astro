@@ -1,16 +1,16 @@
 ---
 const { className } = Astro.props
-import itSkills from '@/config/it-skills.json'
+import itSkills from '@/config/skills.json'
 import Skill from './Skill.astro'
 ---
 
 <section
     class={className}
-    id="it-skills"
+    id="skills"
 >
     <div class="rounded border border-border p-12 lg:p-9 h-full">
         <ul class="flex items-center space-x-4">
-            <h4 class="text-primary">IT Skills</h4>
+            <h4 class="text-primary">Skills</h4>
         </ul>
         <Skill
             skillList={itSkills.leadershipAndManagement}

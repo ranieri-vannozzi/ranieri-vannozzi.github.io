@@ -6,9 +6,9 @@ import Contacts from '@/components/Contacts.astro'
 import Education from '@/components/Education.astro'
 import Career from '@/components/Career.astro'
 import Interests from '@/components/Interests.astro'
-import ItSkills from '@/components/ItSkills.astro'
-import KeyCompetencies from '@/components/KeyCompetencies.astro'
-import WhoIAm from '@/components/WhoIAm.astro'
+import Skills from '@/components/Skills.astro'
+import Keys from '@/components/Keys.astro'
+import Overwiev from '@/components/Overwiev.astro'
 import config from '@/config/config.json'
 import contacts from '@/config/contacts.json'
 import Base from '@/layouts/Base.astro'
@@ -62,11 +62,11 @@ const { name, image, designation, bio } = config.profile
             <div class="row">
                 <div class="mx-auto lg:col-12">
                     <div class="row g-4">
-                        <WhoIAm className="col-12 sm:col-12" />
+                        <Overwiev className="col-12 sm:col-12" />
                         <Education className="col-12 sm:col-8" />
-                        <KeyCompetencies className="col-12 sm:col-4" />
+                        <Keys className="col-12 sm:col-4" />
                         <Career className="col-12 sm:col-8" />
-                        <ItSkills className="col-12 sm:col-4" />
+                        <Skills className="col-12 sm:col-4" />
                         <Interests className="col-12 sm:col-6" />
                         <Projects className="col-12 sm:col-6" />
                         <Contacts className="col-12 sm:col-12" />
