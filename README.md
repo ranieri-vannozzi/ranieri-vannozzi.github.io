@@ -1,7 +1,3 @@
-## Installation
-
-After downloading the template, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
-
 ### Install prerequisites (once for a machine)
 
 - **Node Installation:** [Install node js](https://nodejs.org/en/download/) [Recommended LTS version]
@@ -32,11 +28,6 @@ After finishing all the customization, you can create a production build by runn
 npm run build
 ```
 
-<!-- licence -->
 ## License
 
-Copyright (c) 2024 - Present, Designed & Developed by [statichunt](https://statichunt.com)
-
-**Code License:** Released under the [MIT](https://github.com/statichunt/hydrogen-astro/blob/main/LICENSE) license.
-
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+Released under the [MIT](https://github.com/statichunt/hydrogen-astro/blob/main/LICENSE) license.
