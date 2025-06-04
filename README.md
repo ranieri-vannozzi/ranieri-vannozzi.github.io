@@ -28,6 +28,7 @@ After finishing all the customization, you can create a production build by runn
 npm run build
 ```
 
+<!-- licence -->
 ## License
 
 Released under the [MIT](https://github.com/statichunt/hydrogen-astro/blob/main/LICENSE) license.

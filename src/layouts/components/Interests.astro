@@ -1,20 +1,18 @@
 ---
-const { className } = Astro.props;
-import interests from "@/config/interests.json";
+const { className } = Astro.props
+import interests from '@/config/interests.json'
 ---
-<section class={className} id="interests">
-  <div class="rounded border border-border p-12 lg:p-9 h-full">
-    <ul class="flex items-center space-x-4">
-      <h4 class="text-primary">Interests</h4>
-    </ul>
-    <p class="my-4">
-    {
-    interests.map((edu) => (
-      <li style="">{edu}
-      </li>
-      <br/>
-    ))
-  }
-  </p>
-  </div>
+
+<section
+    class={className}
+    id="interests"
+>
+    <div class="rounded border border-border p-12 lg:p-9 h-full">
+        <ul class="flex items-center space-x-4">
+            <h4 class="text-primary">Interests</h4>
+        </ul>
+        <p class="my-4">
+            {interests.map((edu) => <li style="">{edu}</li>)}
+        </p>
+    </div>
 </section>

@@ -1,84 +1,88 @@
 ---
-import ImageMod from "@/components/ImageMod.astro";
-import Pagination from "@/components/Pagination.astro";
-import Social from "@/components/Social.astro";
-import Contacts from "@/components/Contacts.astro";
-import Education from "@/components/Education.astro";
-import Career from "@/components/Career.astro";
-import Interests from "@/components/Interests.astro";
-import ItSkills from "@/components/ItSkills.astro";
-import KeyCompetencies from "@/components/KeyCompetencies.astro";
-import WhoIAm from "@/components/WhoIAm.astro";
-import config from "@/config/config.json";
-import contacts from "@/config/contacts.json";
-import Base from "@/layouts/Base.astro";
-import { getSinglePage } from "@/lib/contentParser.astro";
-import { sortByDate } from "@/lib/utils/sortFunctions";
-import { markdownify } from "@/lib/utils/textConverter";
-import Projects from "@/components/Projects.astro";
+import ImageMod from '@/components/ImageMod.astro'
+import Pagination from '@/components/Pagination.astro'
+import Social from '@/components/Social.astro'
+import Contacts from '@/components/Contacts.astro'
+import Education from '@/components/Education.astro'
+import Career from '@/components/Career.astro'
+import Interests from '@/components/Interests.astro'
+import ItSkills from '@/components/ItSkills.astro'
+import KeyCompetencies from '@/components/KeyCompetencies.astro'
+import WhoIAm from '@/components/WhoIAm.astro'
+import config from '@/config/config.json'
+import contacts from '@/config/contacts.json'
+import Base from '@/layouts/Base.astro'
+import { getSinglePage } from '@/lib/contentParser.astro'
+import { sortByDate } from '@/lib/utils/sortFunctions'
+import { markdownify } from '@/lib/utils/textConverter'
+import Projects from '@/components/Projects.astro'
 
-const posts = await getSinglePage("posts");
-const { pagination } = config.settings;
-const { name, image, designation, bio } = config.profile;
-const sortPostByDate = sortByDate(posts);
+const posts = await getSinglePage('posts')
+const { pagination } = config.settings
+const { name, image, designation, bio } = config.profile
+const sortPostByDate = sortByDate(posts)
 ---
 
 <Base>
-  {/* profile */}
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="mx-auto text-center lg:col-8">
-          <ImageMod
-            class="mx-auto rounded-full"
-            src={image}
-            width={220}
-            height={220}
-            alt={name}
-            loading="eager"
-          />
-          <h1
-            set:html={markdownify(name)}
-            class="mt-12 text-6xl lg:text-8xl font-semibold"
-          />
-          <p
-            set:html={markdownify(designation)}
-            class="mt-6 text-primary text-xl"
-          />
-          <p set:html={markdownify(bio)} class="mt-4 leading-9 text-xl" />
-          <Social source={contacts.socials} className="social-icons mt-8" />
+    {/* profile */}
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto text-center lg:col-8">
+                    <ImageMod
+                        class="mx-auto rounded-full"
+                        src={image}
+                        width={220}
+                        height={220}
+                        alt={name}
+                        loading="eager"
+                    />
+                    <h1
+                        set:html={markdownify(name)}
+                        class="mt-12 text-6xl lg:text-8xl font-semibold"
+                    />
+                    <p
+                        set:html={markdownify(designation)}
+                        class="mt-6 text-primary text-xl"
+                    />
+                    <p
+                        set:html={markdownify(bio)}
+                        class="mt-4 leading-9 text-xl"
+                    />
+                    <Social
+                        source={contacts.socials}
+                        className="social-icons mt-8"
+                    />
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
-  {/* contents */}
-  <div class="pt-4">
-    <div class="container">
-      <div class="row">
-        <div class="mx-auto lg:col-12">
-          <div class="row g-4">
-            
-            <WhoIAm className="col-12 sm:col-12"></WhoIAm>
+    {/* contents */}
+    <div class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto lg:col-12">
+                    <div class="row g-4">
+                        <WhoIAm className="col-12 sm:col-12" />
 
-              <Education className="col-12 sm:col-8"></Education>
-              <KeyCompetencies className="col-12 sm:col-4"></KeyCompetencies>
+                        <Education className="col-12 sm:col-8" />
+                        <KeyCompetencies className="col-12 sm:col-4" />
 
-            <Career className="col-12 sm:col-8"></Career>
-            <ItSkills className="col-12 sm:col-4"></ItSkills>
-            <Interests className="col-12 sm:col-6"></Interests>
-            <Projects className="col-12 sm:col-6"></Projects>
-            <Contacts className="col-12 sm:col-12"></Contacts>
-                  
-          </div>
+                        <Career className="col-12 sm:col-8" />
+                        <ItSkills className="col-12 sm:col-4" />
+                        <Interests className="col-12 sm:col-6" />
+                        <Projects className="col-12 sm:col-6" />
+                        <Contacts className="col-12 sm:col-12" />
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12">
+                <Pagination
+                    totalPages={Math.ceil(posts.length / pagination)}
+                    currentPage={1}
+                />
+            </div>
         </div>
-      </div>
-      <div class="mt-12">
-        <Pagination
-          totalPages={Math.ceil(posts.length / pagination)}
-          currentPage={1}
-        />
-      </div>
     </div>
-  </div>
 </Base>

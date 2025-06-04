@@ -1,5 +1,7 @@
 {
     "leadershipAndManagement": ["Leadership", "Agile / Scrum / Kanban", "Project Management", "Planning & Prioritization"],
-    "backendTechnologies": ["Java", "Kotlin", "Node.js", "Spring Boot", "PostgreSQL", "MySQL", "Docker"],
-    "frontendTechnologies": ["Angular", "TypeScript", "JavaScript", "CSS", "HTMX", "JSX", "TSX"]
+    "backendTechnologies": ["Java", "Kotlin", "Node.js", "Bun", "Spring Boot", "PostgreSQL", "MySQL"],
+    "frontendTechnologies": ["Angular", "TypeScript", "JavaScript", "CSS", "HTMX", "JSX", "TSX", "Astro", "Tailwind CSS"],
+    "devOpsPractices": ["CI / CD", "Git / GitFlow", "GitHub", "GitLab", "Jenkins", "Docker", "Kubernetes"],
+    "cloudPlatforms": ["AWS", "Google Cloud Platform"]
 }

@@ -1,28 +1,26 @@
 ---
-import menuJson from "@/config/menu.json";
-import { getSinglePage } from "@/lib/contentParser.astro";
+import menuJson from '@/config/menu.json'
+import { getSinglePage } from '@/lib/contentParser.astro'
 
 interface ChildNavigationLink {
-  name: string;
-  url: string;
+    name: string
+    url: string
 }
 
 interface NavigationLink {
-  name: string;
-  url: string;
-  hasChildren?: boolean;
-  children?: ChildNavigationLink[];
+    name: string
+    url: string
+    hasChildren?: boolean
+    children?: ChildNavigationLink[]
 }
 
-const menu: { main: NavigationLink[] } = menuJson;
-const { pathname } = Astro.url;
+const menu: { main: NavigationLink[] } = menuJson
+const { pathname } = Astro.url
 
-const posts = await getSinglePage("posts");
+const posts = await getSinglePage('posts')
 
 // Extracting unique categories from posts
-const uniqueCategories: string[] = [
-  ...new Set(posts.flatMap((post: any) => post.data.categories)),
-];
+const uniqueCategories: string[] = [...new Set(posts.flatMap((post: any) => post.data.categories))]
 
 // const categories: NavigationLink[] = uniqueCategories.map(
 //   (category: string) => ({
@@ -32,83 +30,76 @@ const uniqueCategories: string[] = [
 // );
 
 // Constructing combinedMenu
-const combinedMenu: NavigationLink[] = [];
+const combinedMenu: NavigationLink[] = []
 
 // Adding the first item of main
-combinedMenu.push(menu.main[0]);
+combinedMenu.push(menu.main[0])
 
 // Adding all categories
-if (
-  pathname.startsWith(menu.main[0].url) &&
-  !menu.main.slice(1).some((item) => pathname.startsWith(item.url))
-) {
-  // combinedMenu.push(...categories);
+if (pathname.startsWith(menu.main[0].url) && !menu.main.slice(1).some((item) => pathname.startsWith(item.url))) {
+    // combinedMenu.push(...categories);
 }
 
 // Adding the rest of the items from main excluding the first one
-if (!pathname.startsWith("/categories/")) {
-  combinedMenu.push(...menu.main.slice(1));
+if (!pathname.startsWith('/categories/')) {
+    combinedMenu.push(...menu.main.slice(1))
 }
 ---
 
 <header class={`header mt-8 pb-3 pt-12`}>
-  <nav class="navbar container text-center md:text-left">
-    
-    <ul
-      id="nav-menu"
-      class="navbar-nav order-3 w-full hidden justify-center md:order-1 md:flex md:w-auto md:space-x-2">
-      {
-        combinedMenu.map((menu) => (
-          <>
-            {menu.hasChildren ? (
-              <li class="nav-item nav-dropdown group relative">
-                <span
-                  class={`nav-link inline-flex items-center ${
-                    menu.children?.map(({ url }) => url).includes(pathname) ||
-                    menu.children
-                      ?.map(({ url }) => `${url}/`)
-                      .includes(pathname)
-                      ? "active"
-                      : ""
-                  }`}>
-                  {menu.name}
-                  <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </span>
-                <ul class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
-                  {menu.children?.map((child) => (
-                    <li class="nav-dropdown-item">
-                      <a
-                        href={child.url}
-                        class={`nav-dropdown-link inline-block ${
-                          (pathname === `${child.url}/` ||
-                            pathname === child.url) &&
-                          "active"
-                        }`}>
-                        {child.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ) : (
-              <li class="nav-item">
-                <a
-                  href={menu.url}
-                  class={`nav-link inline-block ${
-                    !menu.url.includes("/categories") && "text-text-dark"
-                  } ${
-                    (pathname === `${menu.url}/` || pathname === menu.url) &&
-                    "nav-link-active"
-                  }`}>
-                  {menu.name}
-                </a>
-              </li>
-            )}
-          </>
-        ))
-      }
-    </ul>
-  </nav>
+    <nav class="navbar container text-center md:text-left">
+        <ul
+            id="nav-menu"
+            class="navbar-nav order-3 w-full justify-center md:order-1 md:flex md:w-auto md:space-x-2"
+        >
+            {
+                combinedMenu.map((menu) => (
+                    <>
+                        {menu.hasChildren ? (
+                            <li class="nav-item nav-dropdown group relative">
+                                <span
+                                    class={`nav-link inline-flex items-center ${
+                                        menu.children?.map(({ url }) => url).includes(pathname) || menu.children?.map(({ url }) => `${url}/`).includes(pathname)
+                                            ? 'active'
+                                            : ''
+                                    }`}
+                                >
+                                    {menu.name}
+                                    <svg
+                                        class="h-4 w-4 fill-current"
+                                        viewBox="0 0 20 20"
+                                    >
+                                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                    </svg>
+                                </span>
+                                <ul class="nav-dropdown-list  group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+                                    {menu.children?.map((child) => (
+                                        <li class="nav-dropdown-item">
+                                            <a
+                                                href={child.url}
+                                                class={`nav-dropdown-link inline-block ${(pathname === `${child.url}/` || pathname === child.url) && 'active'}`}
+                                            >
+                                                {child.name}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </li>
+                        ) : (
+                            <li class="nav-item">
+                                <a
+                                    href={menu.url}
+                                    class={`nav-link inline-block ${!menu.url.includes('/categories') && 'text-text-dark'} ${
+                                        (pathname === `${menu.url}/` || pathname === menu.url) && 'nav-link-active'
+                                    }`}
+                                >
+                                    {menu.name}
+                                </a>
+                            </li>
+                        )}
+                    </>
+                ))
+            }
+        </ul>
+    </nav>
 </header>

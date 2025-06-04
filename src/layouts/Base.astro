@@ -1,168 +1,196 @@
 ---
-import TwSizeIndicator from "@/components/TwSizeIndicator.astro";
-import config from "@/config/config.json";
-import theme from "@/config/theme.json";
-import { plainify } from "@/lib/utils/textConverter";
-import Footer from "@/partials/Footer.astro";
-import Header from "@/partials/Header.astro";
-import "@/styles/main.css";
-import { AstroFont } from "astro-font";
-import { ClientRouter } from "astro:transitions";
-const { pathname } = Astro.url;
+import TwSizeIndicator from '@/components/TwSizeIndicator.astro'
+import config from '@/config/config.json'
+import theme from '@/config/theme.json'
+import { plainify } from '@/lib/utils/textConverter'
+import Footer from '@/partials/Footer.astro'
+import Header from '@/partials/Header.astro'
+import '@/styles/main.css'
+import { AstroFont } from 'astro-font'
+import { ClientRouter } from 'astro:transitions'
+const { pathname } = Astro.url
 
 // font families
-const pf = theme.fonts.font_family.primary;
+const pf = theme.fonts.font_family.primary
 
-let fontPrimary, fontSecondary;
+let fontPrimary, fontSecondary
 if (theme.fonts.font_family.primary) {
-  fontPrimary = theme.fonts.font_family.primary
-    .replace(/\+/g, " ")
-    .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
+    fontPrimary = theme.fonts.font_family.primary.replace(/\+/g, ' ').replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, '')
 }
 
 // types for frontmatters
 export interface Props {
-  title?: string;
-  meta_title?: string;
-  description?: string;
-  image?: string;
-  noindex?: boolean;
-  canonical?: string;
+    title?: string
+    meta_title?: string
+    description?: string
+    image?: string
+    noindex?: boolean
+    canonical?: string
 }
 
 // distructure frontmatters
-const { title, meta_title, description, image, noindex, canonical } =
-  Astro.props;
+const { title, meta_title, description, image, noindex, canonical } = Astro.props
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- favicon -->
-    <link rel="shortcut icon" href={config.site.favicon} />
-    <!-- theme meta -->
-    <meta name="theme-name" content="hydrogen-astro" />
-    <meta name="msapplication-TileColor" content="#000000" />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: light)"
-      content="#fff"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#000"
-    />
-    <meta name="generator" content={Astro.generator} />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <head>
+        <!-- favicon -->
+        <link
+            rel="shortcut icon"
+            href={config.site.favicon}
+        />
+        <!-- theme meta -->
+        <meta
+            name="theme-name"
+            content="hydrogen-astro"
+        />
+        <meta
+            name="msapplication-TileColor"
+            content="#000000"
+        />
+        <meta
+            name="theme-color"
+            media="(prefers-color-scheme: light)"
+            content="#fff"
+        />
+        <meta
+            name="theme-color"
+            media="(prefers-color-scheme: dark)"
+            content="#000"
+        />
+        <meta
+            name="generator"
+            content={Astro.generator}
+        />
+        <meta
+            http-equiv="Content-Type"
+            content="text/html; charset=UTF-8"
+        />
 
-    <!-- google font css -->
-    <AstroFont
-      config={[
+        <!-- google font css -->
+        <AstroFont
+            config={[
+                {
+                    src: [],
+                    preload: false,
+                    display: 'swap',
+                    name: fontPrimary!,
+                    fallback: 'sans-serif',
+                    cssVariable: 'font-primary',
+                    googleFontsURL: `https://fonts.googleapis.com/css2?family=${pf}&display=swap`,
+                },
+            ]}
+        />
+
+        <!-- responsive meta -->
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=5"
+        />
+
+        <!-- title -->
+        <title>
+            {plainify(meta_title ? meta_title : title ? title : config.site.title)}
+        </title>
+
+        <!-- canonical url -->
         {
-          src: [],
-          preload: false,
-          display: "swap",
-          name: fontPrimary!,
-          fallback: "sans-serif",
-          cssVariable: "font-primary",
-          googleFontsURL: `https://fonts.googleapis.com/css2?family=${pf}&display=swap`,
-        },
-      ]}
-    />
+            canonical && (
+                <link
+                    rel="canonical"
+                    href={canonical}
+                    item-prop="url"
+                />
+            )
+        }
 
-    <!-- responsive meta -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=5"
-    />
+        <!-- noindex robots -->
+        {
+            noindex && (
+                <meta
+                    name="robots"
+                    content="noindex,nofollow"
+                />
+            )
+        }
 
-    <!-- title -->
-    <title>
-      {plainify(meta_title ? meta_title : title ? title : config.site.title)}
-    </title>
+        <!-- meta-description -->
+        <meta
+            name="description"
+            content={plainify(description ? description : config.metadata.meta_description)}
+        />
 
-    <!-- canonical url -->
-    {canonical && <link rel="canonical" href={canonical} item-prop="url" />}
+        <ClientRouter />
 
-    <!-- noindex robots -->
-    {noindex && <meta name="robots" content="noindex,nofollow" />}
+        <!-- author from config.json -->
+        <meta
+            name="author"
+            content={config.metadata.meta_author}
+        />
 
-    <!-- meta-description -->
-    <meta
-      name="description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
+        <!-- og-title -->
+        <meta
+            property="og:title"
+            content={plainify(meta_title ? meta_title : title ? title : config.site.title)}
+        />
 
-    <ClientRouter />
+        <!-- og-description -->
+        <meta
+            property="og:description"
+            content={plainify(description ? description : config.metadata.meta_description)}
+        />
+        <meta
+            property="og:type"
+            content="website"
+        />
+        <meta
+            property="og:url"
+            content={`${config.site.base_url}/${Astro.url.pathname.replace('/', '')}`}
+        />
 
-    <!-- author from config.json -->
-    <meta name="author" content={config.metadata.meta_author} />
+        <!-- twitter-title -->
+        <meta
+            name="twitter:title"
+            content={plainify(meta_title ? meta_title : title ? title : config.site.title)}
+        />
 
-    <!-- og-title -->
-    <meta
-      property="og:title"
-      content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title
-      )}
-    />
+        <!-- twitter-description -->
+        <meta
+            name="twitter:description"
+            content={plainify(description ? description : config.metadata.meta_description)}
+        />
 
-    <!-- og-description -->
-    <meta
-      property="og:description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
-    />
+        <!-- og-image -->
+        <meta
+            property="og:image"
+            content={`${config.site.base_url}${image ? image : config.metadata.meta_image}`}
+        />
 
-    <!-- twitter-title -->
-    <meta
-      name="twitter:title"
-      content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title
-      )}
-    />
-
-    <!-- twitter-description -->
-    <meta
-      name="twitter:description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
-
-    <!-- og-image -->
-    <meta
-      property="og:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
-
-    <!-- twitter-image -->
-    <meta
-      name="twitter:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-  </head>
-  <body>
-    <TwSizeIndicator />
-    <!-- {!pathname.startsWith("/posts/") && <Header />} -->
-     <Header />
-    <main id="main-content">
-      <slot />
-    </main>
-    <Header />
+        <!-- twitter-image -->
+        <meta
+            name="twitter:image"
+            content={`${config.site.base_url}${image ? image : config.metadata.meta_image}`}
+        />
+        <meta
+            name="twitter:card"
+            content="summary_large_image"
+        />
+    </head>
+    <body>
+        <TwSizeIndicator />
+        <!-- Header only on root -->
+        {
+            pathname.length > 1 === false && (
+                <span class="hidden sm:block">
+                    <Header />
+                </span>
+            )
+        }
+        <main id="main-content">
+            <slot />
+        </main>
+        {pathname.length > 1 === false && <Header />}</body
+    >
     <Footer />
-  </body>
 </html>
