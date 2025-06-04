@@ -1,0 +1,15 @@
+{
+    "emails": ["rvannozzi@herohubs.it"],
+    "socials": [
+        {
+            "name": "linkedin",
+            "icon": "FaLinkedin",
+            "link": "https://www.linkedin.com/in/rvannozzi/"
+        },
+        {
+            "name": "github",
+            "icon": "FaGithub",
+            "link": "https://github.com/ranierivan"
+        }
+    ]
+}

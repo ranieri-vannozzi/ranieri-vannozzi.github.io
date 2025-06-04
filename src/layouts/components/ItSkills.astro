@@ -1,6 +1,6 @@
 ---
 const { className } = Astro.props;
-import config from "@/config/config.json";
+import itSkills from "@/config/it-skills.json";
 import Skill from "./Skill.astro";
 ---
 <section class={className} id="it-skills">
@@ -8,9 +8,9 @@ import Skill from "./Skill.astro";
     <ul class="flex items-center space-x-4">
       <h4 class="text-primary">IT Skills</h4>
     </ul>
-<Skill skillList={config.curriculum.itSkills.leadershipAndManagement} skillType="Leadership" />
-<Skill skillList={config.curriculum.itSkills.backendTechnologies} skillType="Backend Technologies" />
-<Skill skillList={config.curriculum.itSkills.frontendTechnologies} skillType="Frontend Technologies" />
+<Skill skillList={itSkills.leadershipAndManagement} skillType="Leadership" />
+<Skill skillList={itSkills.backendTechnologies} skillType="Backend Technologies" />
+<Skill skillList={itSkills.frontendTechnologies} skillType="Frontend Technologies" />
 <!-- <Skill skillList={config.curriculum.itSkills.testing} skillType="Testing" />
 <Skill skillList={config.curriculum.itSkills.cmsAndData} skillType="Cms" /> -->
 

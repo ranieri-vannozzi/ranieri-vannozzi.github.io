@@ -1,16 +1,16 @@
 ---
 import ImageMod from "@/components/ImageMod.astro";
 import Pagination from "@/components/Pagination.astro";
-import Post from "@/components/Post.astro";
 import Social from "@/components/Social.astro";
 import Contacts from "@/components/Contacts.astro";
 import Education from "@/components/Education.astro";
-import EmploymentHistory from "@/components/EmploymentHistory.astro";
-import InterestsAndMiscellaneous from "@/components/InterestsAndMiscellaneous.astro";
+import Career from "@/components/Career.astro";
+import Interests from "@/components/Interests.astro";
 import ItSkills from "@/components/ItSkills.astro";
 import KeyCompetencies from "@/components/KeyCompetencies.astro";
 import WhoIAm from "@/components/WhoIAm.astro";
 import config from "@/config/config.json";
+import contacts from "@/config/contacts.json";
 import Base from "@/layouts/Base.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
@@ -46,7 +46,7 @@ const sortPostByDate = sortByDate(posts);
             class="mt-6 text-primary text-xl"
           />
           <p set:html={markdownify(bio)} class="mt-4 leading-9 text-xl" />
-          <Social source={config.curriculum.contacts} className="social-icons mt-8" />
+          <Social source={contacts.socials} className="social-icons mt-8" />
         </div>
       </div>
     </div>
@@ -64,15 +64,11 @@ const sortPostByDate = sortByDate(posts);
               <Education className="col-12 sm:col-8"></Education>
               <KeyCompetencies className="col-12 sm:col-4"></KeyCompetencies>
 
-            <EmploymentHistory className="col-12 sm:col-8"></EmploymentHistory>
+            <Career className="col-12 sm:col-8"></Career>
             <ItSkills className="col-12 sm:col-4"></ItSkills>
-            <InterestsAndMiscellaneous className="col-12 sm:col-6"></InterestsAndMiscellaneous>
+            <Interests className="col-12 sm:col-6"></Interests>
             <Projects className="col-12 sm:col-6"></Projects>
             <Contacts className="col-12 sm:col-12"></Contacts>
-
-
-
-
                   
           </div>
         </div>

@@ -1,6 +1,6 @@
 ---
 const { className } = Astro.props;
-import config from "@/config/config.json";
+import interests from "@/config/interests.json";
 ---
 <section class={className} id="interests">
   <div class="rounded border border-border p-12 lg:p-9 h-full">
@@ -9,7 +9,7 @@ import config from "@/config/config.json";
     </ul>
     <p class="my-4">
     {
-    config.curriculum.interestsAndMiscellaneous.map((edu) => (
+    interests.map((edu) => (
       <li style="">{edu}
       </li>
       <br/>

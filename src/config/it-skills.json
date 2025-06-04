@@ -1,0 +1,5 @@
+{
+    "leadershipAndManagement": ["Leadership", "Agile / Scrum / Kanban", "Project Management", "Planning & Prioritization"],
+    "backendTechnologies": ["Java", "Kotlin", "Node.js", "Spring Boot", "PostgreSQL", "MySQL", "Docker"],
+    "frontendTechnologies": ["Angular", "TypeScript", "JavaScript", "CSS", "HTMX", "JSX", "TSX"]
+}
