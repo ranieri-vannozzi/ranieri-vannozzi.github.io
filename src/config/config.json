@@ -1,10 +1,10 @@
 {
     "site": {
-        "title": "Ranieri Vannozzi - Cloud Architect | Tech Lead | Project Manager",
+        "title": "Ranieri Vannozzi - Project Manager | Tech Lead | Full Stack Developer",
         "base_url": "https://ranierivan.github.io/",
         "base_path": "/",
         "trailing_slash": false,
-        "favicon": "/images/ranierivan.png"
+        "favicon": "/images/favicon.jpg"
     },
 
     "settings": {
@@ -14,14 +14,14 @@
 
     "profile": {
         "name": "Ranieri Vannozzi",
-        "image": "/images/ranierivan.png",
+        "image": "/images/ranieri-vannozzi.jpg",
         "designation": "Freelance Consultant",
         "bio": "Experienced software engineer with over 15 years in enterprise application development. Passionate about clean architecture, cloud-native technologies, and scalable web platforms. Strong background in leading development teams and delivering robust B2B solutions."
     },
 
     "params": {
         "contact_form_action": "#",
-        "copyright": "Copyright © 2025 Ranieri Vannozzi - P.Iva 02103710477"
+        "copyright": "Copyright © 2025 - Ranieri Vannozzi - P.Iva 02103710477"
     },
 
     "disqus": {
@@ -32,7 +32,7 @@
 
     "metadata": {
         "meta_author": "Ranieri Vannozzi",
-        "meta_image": "/images/og-image.png",
-        "meta_description": "Fullstack Developer based in Italy with 15+ years of experience in enterprise software, cloud-native systems, and scalable B2B platforms."
+        "meta_image": "/images/og-image.jpg",
+        "meta_description": "Experienced software engineer with over 15 years in enterprise application development. Passionate about clean architecture, cloud-native technologies, and scalable web platforms. Strong background in leading development teams and delivering robust B2B solutions."
     }
 }

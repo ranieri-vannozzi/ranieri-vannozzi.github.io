@@ -13,14 +13,12 @@ import config from '@/config/config.json'
 import contacts from '@/config/contacts.json'
 import Base from '@/layouts/Base.astro'
 import { getSinglePage } from '@/lib/contentParser.astro'
-import { sortByDate } from '@/lib/utils/sortFunctions'
 import { markdownify } from '@/lib/utils/textConverter'
 import Projects from '@/components/Projects.astro'
 
 const posts = await getSinglePage('posts')
 const { pagination } = config.settings
 const { name, image, designation, bio } = config.profile
-const sortPostByDate = sortByDate(posts)
 ---
 
 <Base>
@@ -65,10 +63,8 @@ const sortPostByDate = sortByDate(posts)
                 <div class="mx-auto lg:col-12">
                     <div class="row g-4">
                         <WhoIAm className="col-12 sm:col-12" />
-
                         <Education className="col-12 sm:col-8" />
                         <KeyCompetencies className="col-12 sm:col-4" />
-
                         <Career className="col-12 sm:col-8" />
                         <ItSkills className="col-12 sm:col-4" />
                         <Interests className="col-12 sm:col-6" />

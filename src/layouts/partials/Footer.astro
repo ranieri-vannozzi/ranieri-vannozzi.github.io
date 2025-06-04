@@ -6,10 +6,11 @@ const { copyright } = config.params
 
 <footer class="pt-16 pb-16">
     <div class="container text-center">
+        {/* footer logo */}
         {/* copyright */}
         <p
             set:html={markdownify(copyright)}
-            class="text-text"
+            class="text-primary text-sm"
         />
     </div>
 </footer>
