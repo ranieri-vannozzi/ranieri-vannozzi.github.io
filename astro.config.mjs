@@ -11,55 +11,55 @@ import config from './src/config/config.json'
 
 let highlighter
 async function getHighlighter() {
-    if (!highlighter) {
-        const { getHighlighter } = await import('shiki')
-        highlighter = await getHighlighter({ theme: 'one-dark-pro' })
-    }
-    return highlighter
+	if (!highlighter) {
+		const { getHighlighter } = await import('shiki')
+		highlighter = await getHighlighter({ theme: 'one-dark-pro' })
+	}
+	return highlighter
 }
 
 // https://astro.build/config
 export default defineConfig({
-    site: config.site.base_url ? config.site.base_url : 'http://examplesite.com',
-    base: config.site.base_path ? config.site.base_path : '/',
-    trailingSlash: config.site.trailing_slash ? 'always' : 'never',
+	site: config.site.base_url ? config.site.base_url : 'http://examplesite.com',
+	base: config.site.base_path ? config.site.base_path : '/',
+	trailingSlash: config.site.trailing_slash ? 'always' : 'never',
 
-    vite: { plugins: [tailwindcss()] },
-    image: { service: sharp() },
+	vite: { plugins: [tailwindcss()] },
+	image: { service: sharp() },
 
-    integrations: [
-        react(),
-        sitemap(),
+	integrations: [
+		react(),
+		sitemap(),
 
-        AutoImport({
-            imports: [
-                '@/shortcodes/Button',
-                '@/shortcodes/Accordion',
-                '@/shortcodes/Notice',
-                '@/shortcodes/Video',
-                '@/shortcodes/Youtube',
-                '@/shortcodes/Tabs',
-                '@/shortcodes/Tab',
-            ],
-        }),
-        mdx(),
-    ],
-    markdown: {
-        remarkPlugins: [
-            remarkToc,
-            [
-                remarkCollapse,
-                {
-                    test: 'Table of contents',
-                },
-            ],
-        ],
-        shikiConfig: {
-            theme: 'one-dark-pro',
-            wrap: true,
-        },
-        highlighter: getHighlighter,
+		AutoImport({
+			imports: [
+				'@/shortcodes/Button',
+				'@/shortcodes/Accordion',
+				'@/shortcodes/Notice',
+				'@/shortcodes/Video',
+				'@/shortcodes/Youtube',
+				'@/shortcodes/Tabs',
+				'@/shortcodes/Tab',
+			],
+		}),
+		mdx(),
+	],
+	markdown: {
+		remarkPlugins: [
+			remarkToc,
+			[
+				remarkCollapse,
+				{
+					test: 'Table of contents',
+				},
+			],
+		],
+		shikiConfig: {
+			theme: 'one-dark-pro',
+			wrap: true,
+		},
+		highlighter: getHighlighter,
 
-        extendDefaultPlugins: true,
-    },
+		extendDefaultPlugins: true,
+	},
 })
