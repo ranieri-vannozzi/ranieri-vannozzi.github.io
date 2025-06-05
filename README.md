@@ -29,6 +29,7 @@ npm run build
 ```
 
 <!-- licence -->
+
 ## License
 
 Released under the [MIT](https://github.com/statichunt/hydrogen-astro/blob/main/LICENSE) license.

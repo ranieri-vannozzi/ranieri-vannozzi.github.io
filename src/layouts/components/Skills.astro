@@ -2,6 +2,7 @@
 const { className } = Astro.props
 import skills from '@/config/skills.json'
 ---
+
 <section
     class={className}
     id="skills"
@@ -11,13 +12,17 @@ import skills from '@/config/skills.json'
             <h4 class="text-primary">{skills.title}</h4>
         </ul>
         {
-        skills.list.map((s) => (
-            <p class="text-primary my-4">{s.title}</p>
-            <p class="my-4">
-                {s.list.map((skill: String) => <li class="mb-5">{skill}</li>)}
-                <p class="h-2"></p>
-            </p>
-                ))
+            skills.list.map((single) => (
+                <>
+                    <p class="text-primary my-4">{single.title}</p>
+                    <ul class="my-4">
+                        {single.list.map((s: string) => (
+                            <li class="mb-5">{s}</li>
+                        ))}
+                    </ul>
+                    <div class="h-2" />
+                </>
+            ))
         }
     </div>
 </section>

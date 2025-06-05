@@ -7,22 +7,25 @@
         },
         {
             "title": "Cloud Platforms",
-            "list": ["Java", "Kotlin", "Node.js", "Bun", "Spring Boot", "PostgreSQL", "MySQL"]
+                        "list": ["AWS", "Google Cloud Platform"]
         },
-
         {
             "title": "Infrastructure",
-            "list": ["Angular", "TypeScript", "JavaScript", "CSS", "HTMX", "JSX", "TSX", "Astro", "Tailwind CSS"]
+            "list": ["CI / CD", "Git / GitFlow", "GitHub", "GitLab", "Jenkins", "Docker", "Kubernetes"]
+            
         },
 
         {
             "title": "Backend Technologies",
-            "list": ["CI / CD", "Git / GitFlow", "GitHub", "GitLab", "Jenkins", "Docker", "Kubernetes"]
+            "list": ["Java", "Kotlin", "Node.js", "Bun", "Spring Boot", "PostgreSQL", "MySQL"]
         },
 
         {
             "title": "Frontend Technologies",
-            "list": ["AWS", "Google Cloud Platform"]
+            "list": ["Angular", "TypeScript", "JavaScript", "CSS", "HTMX", "JSX", "TSX", "Astro", "Tailwind CSS"]
         }
     ]
 }
+
+
+            
