@@ -7,12 +7,11 @@
         },
         {
             "title": "Cloud Platforms",
-                        "list": ["AWS", "Google Cloud Platform"]
+            "list": ["AWS", "Google Cloud Platform"]
         },
         {
             "title": "Infrastructure",
             "list": ["CI / CD", "Git / GitFlow", "GitHub", "GitLab", "Jenkins", "Docker", "Kubernetes"]
-            
         },
 
         {
@@ -26,6 +25,3 @@
         }
     ]
 }
-
-
-            
