@@ -3,34 +3,34 @@ const { className } = Astro.props
 import education from '@/config/education.json'
 
 export interface IEducation {
-    degree: string
-    institution: string
-    period: string
-    details: string
+	degree: string
+	institution: string
+	period: string
+	details: string
 }
 ---
 
 <section
-    class={className}
-    id="education"
+	class={className}
+	id="education"
 >
-    <div class="rounded border border-border p-12 lg:p-9 h-full">
-        <ul class="flex items-center space-x-4">
-            <h4 class="text-primary">{education.title}</h4>
-        </ul>
-        <p class="my-4">
-            <ul class="space-y-6">
-                {
-                    education.degrees.map((edu: IEducation) => (
-                        <li class=" border-border ">
-                            <h6 class="">{edu.degree}</h6>
-                            <p class="text-muted-foreground">
-                                {edu.institution} ({edu.period})
-                            </p>
-                        </li>
-                    ))
-                }
-            </ul>
-        </p>
-    </div>
+	<div class="rounded border border-border p-12 lg:p-9 h-full">
+		<ul class="flex items-center space-x-4">
+			<h4 class="text-primary">{education.title}</h4>
+		</ul>
+		<p class="my-4">
+			<ul class="space-y-6">
+				{
+					education.degrees.map((edu: IEducation) => (
+						<li class=" border-border ">
+							<h6 class="">{edu.degree}</h6>
+							<p class="text-muted-foreground">
+								{edu.institution} ({edu.period})
+							</p>
+						</li>
+					))
+				}
+			</ul>
+		</p>
+	</div>
 </section>

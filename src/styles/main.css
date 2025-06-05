@@ -8,15 +8,15 @@
 @import './utilities.css';
 
 @layer base {
-    @import './base.css';
+	@import './base.css';
 }
 
 @layer components {
-    @import './components.css';
-    @import './navigation.css';
-    @import './buttons.css';
+	@import './components.css';
+	@import './navigation.css';
+	@import './buttons.css';
 }
 
 @theme {
-    --breakpoint-sm: 540px;
+	--breakpoint-sm: 540px;
 }

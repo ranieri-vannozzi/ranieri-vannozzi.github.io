@@ -1,37 +1,37 @@
 {
-    "main": [
-        {
-            "name": "Overview",
-            "url": "#overview"
-        },
-        {
-            "name": "Education",
-            "url": "#education"
-        },
-        {
-            "name": "Keys",
-            "url": "#keys"
-        },
-        {
-            "name": "Career",
-            "url": "#career"
-        },
-        {
-            "name": "Skills",
-            "url": "#skills"
-        },
+	"main": [
+		{
+			"name": "Overview",
+			"url": "#overview"
+		},
+		{
+			"name": "Education",
+			"url": "#education"
+		},
+		{
+			"name": "Keys",
+			"url": "#keys"
+		},
+		{
+			"name": "Career",
+			"url": "#career"
+		},
+		{
+			"name": "Skills",
+			"url": "#skills"
+		},
 
-        {
-            "name": "Projects",
-            "url": "#projects"
-        },
-        {
-            "name": "Interests",
-            "url": "#interests"
-        },
-        {
-            "name": "Contacts",
-            "url": "#contacts"
-        }
-    ]
+		{
+			"name": "Projects",
+			"url": "#projects"
+		},
+		{
+			"name": "Interests",
+			"url": "#interests"
+		},
+		{
+			"name": "Contacts",
+			"url": "#contacts"
+		}
+	]
 }

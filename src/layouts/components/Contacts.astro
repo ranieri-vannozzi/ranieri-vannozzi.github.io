@@ -5,39 +5,39 @@ import Social from './Social.astro'
 ---
 
 <section
-    class={className}
-    id="contacts"
+	class={className}
+	id="contacts"
 >
-    <div class="rounded border border-border p-12 lg:p-9 h-full">
-        <h4 class="text-primary mb-6">{contacts.title}</h4>
+	<div class="rounded border border-border p-12 lg:p-9 h-full">
+		<h4 class="text-primary mb-6">{contacts.title}</h4>
 
-        <div class="flex md:flex-row justify-between">
-            {/* Email a sinistra */}
-            <div class="w-full">
-                <p class="">
-                    {
-                        contacts.emails.map((email: string) => (
-                            <li>
-                                <a
-                                    href={`mailto:${email}`}
-                                    class="hover:text-primary"
-                                >
-                                    {email}
-                                </a>
-                            </li>
-                        ))
-                    }
-                </p>
-            </div>
+		<div class="flex md:flex-row justify-between">
+			{/* Email a sinistra */}
+			<div class="w-full">
+				<p class="">
+					{
+						contacts.emails.map((email: string) => (
+							<li>
+								<a
+									href={`mailto:${email}`}
+									class="hover:text-primary"
+								>
+									{email}
+								</a>
+							</li>
+						))
+					}
+				</p>
+			</div>
 
-            <div class="hidden sm:block">
-                <div class="w-full flex items-center justify-end">
-                    <Social
-                        source={contacts.socials}
-                        className="social-icons flex"
-                    />
-                </div>
-            </div>
-        </div>
-    </div>
+			<div class="hidden sm:block">
+				<div class="w-full flex items-center justify-end">
+					<Social
+						source={contacts.socials}
+						className="social-icons flex"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>

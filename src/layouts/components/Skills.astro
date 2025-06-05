@@ -4,25 +4,25 @@ import skills from '@/config/skills.json'
 ---
 
 <section
-    class={className}
-    id="skills"
+	class={className}
+	id="skills"
 >
-    <div class="rounded border border-border p-12 lg:p-9 h-full">
-        <ul class="flex items-center space-x-4">
-            <h4 class="text-primary">{skills.title}</h4>
-        </ul>
-        {
-            skills.list.map((single) => (
-                <>
-                    <p class="text-primary my-4">{single.title}</p>
-                    <ul class="my-4">
-                        {single.list.map((s: string) => (
-                            <li class="mb-5">{s}</li>
-                        ))}
-                    </ul>
-                    <div class="h-2" />
-                </>
-            ))
-        }
-    </div>
+	<div class="rounded border border-border p-12 lg:p-9 h-full">
+		<ul class="flex items-center space-x-4">
+			<h4 class="text-primary">{skills.title}</h4>
+		</ul>
+		{
+			skills.list.map((single) => (
+				<>
+					<p class="text-primary my-4">{single.title}</p>
+					<ul class="my-4">
+						{single.list.map((s: string) => (
+							<li class="mb-5">{s}</li>
+						))}
+					</ul>
+					<div class="h-2" />
+				</>
+			))
+		}
+	</div>
 </section>

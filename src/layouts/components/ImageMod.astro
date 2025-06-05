@@ -4,15 +4,15 @@ import { Image } from 'astro:assets'
 
 // Props interface for the component
 interface Props {
-    src: string
-    alt: string
-    width: number
-    height: number
-    loading?: 'eager' | 'lazy' | null | undefined
-    decoding?: 'async' | 'auto' | 'sync' | null | undefined
-    format?: 'auto' | 'avif' | 'jpeg' | 'png' | 'svg' | 'webp'
-    class?: string
-    style?: any
+	src: string
+	alt: string
+	width: number
+	height: number
+	loading?: 'eager' | 'lazy' | null | undefined
+	decoding?: 'async' | 'auto' | 'sync' | null | undefined
+	format?: 'auto' | 'avif' | 'jpeg' | 'png' | 'svg' | 'webp'
+	class?: string
+	style?: any
 }
 
 // Destructuring Astro.props to get the component's props
@@ -31,17 +31,17 @@ const isValidPath = images[src] ? true : false
 ---
 
 {
-    isValidPath && (
-        <Image
-            src={images[src]() as Promise<{ default: ImageMetadata }>}
-            alt={alt}
-            width={width}
-            height={height}
-            loading={loading}
-            decoding={decoding}
-            class={className}
-            format={format}
-            style={style}
-        />
-    )
+	isValidPath && (
+		<Image
+			src={images[src]() as Promise<{ default: ImageMetadata }>}
+			alt={alt}
+			width={width}
+			height={height}
+			loading={loading}
+			decoding={decoding}
+			class={className}
+			format={format}
+			style={style}
+		/>
+	)
 }

@@ -4,64 +4,64 @@ import career from '@/config/career.json'
 import DynamicIcon from '@/helpers/DynamicIcon'
 
 export interface IJob {
-    role: string
-    company: string
-    period: string
-    location: string
-    responsibilities: string[]
+	role: string
+	company: string
+	period: string
+	location: string
+	responsibilities: string[]
 }
 export const maxH = '1550px'
 ---
 
 <section
-    class={className}
-    id="career"
+	class={className}
+	id="career"
 >
-    <div class="rounded border border-border p-12 lg:p-9 h-full">
-        <div
-            id="career-div"
-            class="overflow-hidden transition-[max-height] duration-300 ease-in-out"
-            style={{ maxHeight: maxH }}
-        >
-            <ul class="flex items-center space-x-4">
-                <h4 class="text-primary">{career.title}</h4>
-            </ul>
-            <p class="my-4">
-                <ul class="space-y-6">
-                    {
-                        career.jobs.map((job: IJob) => (
-                            <li class="border-b border-border pb-8 pt-2 last:border-b-0">
-                                <h6 class="font-bold">{job.role}</h6>
-                                <p class="text-muted-foreground">
-                                    {job.company} ({job.location})
-                                </p>
-                                <ul class="list-disc list-inside space-y-1 ">
-                                    <li class="pl-2 pt-2">{job.period}</li>
-                                    {job.responsibilities.map((item) => (
-                                        <li class="pl-2 pt-2">{item}</li>
-                                    ))}
-                                </ul>
-                            </li>
-                        ))
-                    }
-                </ul>
-            </p>
-        </div>
-        <div
-            id="career-plus"
-            class="text-center mt-12 cursor-pointer"
-            onclick="
+	<div class="rounded border border-border p-12 lg:p-9 h-full">
+		<div
+			id="career-div"
+			class="overflow-hidden transition-[max-height] duration-300 ease-in-out"
+			style={{ maxHeight: maxH }}
+		>
+			<ul class="flex items-center space-x-4">
+				<h4 class="text-primary">{career.title}</h4>
+			</ul>
+			<p class="my-4">
+				<ul class="space-y-6">
+					{
+						career.jobs.map((job: IJob) => (
+							<li class="border-b border-border pb-8 pt-2 last:border-b-0">
+								<h6 class="font-bold">{job.role}</h6>
+								<p class="text-muted-foreground">
+									{job.company} ({job.location})
+								</p>
+								<ul class="list-disc list-inside space-y-1 ">
+									<li class="pl-2 pt-2">{job.period}</li>
+									{job.responsibilities.map((item) => (
+										<li class="pl-2 pt-2">{item}</li>
+									))}
+								</ul>
+							</li>
+						))
+					}
+				</ul>
+			</p>
+		</div>
+		<div
+			id="career-plus"
+			class="text-center mt-12 cursor-pointer"
+			onclick="
               const div1 = document.getElementById('career-div');
               const plus1 = document.getElementById('career-plus');
               const minus1 = document.getElementById('career-minus');
               if (div1) div1.style.maxHeight = 'none';
               if (plus1) plus1.style.display = 'none'; 
               if (minus1) minus1.style.display = 'block'; "
-        >
-            <span class="text-primary">expand</span>&nbsp;&nbsp;<DynamicIcon
-                className="inline-block"
-                icon="FaSquarePlus"
-            />
-        </div>
-    </div>
+		>
+			<span class="text-primary">expand</span>&nbsp;&nbsp;<DynamicIcon
+				className="inline-block"
+				icon="FaSquarePlus"
+			/>
+		</div>
+	</div>
 </section>

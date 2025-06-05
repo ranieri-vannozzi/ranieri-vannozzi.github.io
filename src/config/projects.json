@@ -1,27 +1,27 @@
 {
-    "title": "Personal Projects",
-    "list": [
-        {
-            "role": "Creator / Full Stack Developer",
-            "company": "Hero Hubs",
-            "period": "2025 - Present",
-            "description": "Creator of Hero Hubs, a professional identity for freelance developers offering high-quality software development. We specialize in building enterprise applications, e-commerce platforms, and scalable cloud-native solutions with a strong emphasis on performance and serverless architecture.",
-            "achievements": [
-                "Led the design and development of enterprise-grade applications tailored to business-critical workflows and high-performance requirements.",
-                "Built scalable and maintainable architectures using serverless technologies to reduce infrastructure complexity and operational costs.",
-                "Provided strategic and technical consulting to help B2B clients modernize their software stack and infrastructure."
-            ]
-        },
-        {
-            "role": "Co-Founder / Frontend Developer",
-            "company": "FoodnWords S.r.l.s.",
-            "period": "2015 - 2017",
-            "description": "Co-founded a startup focused on language learning. Designed and developed the entire front-end architecture of the platform using AngularJS, ensuring a responsive and consistent experience across web and mobile interfaces.",
-            "achievements": [
-                "Designed and developed the front-end architecture using AngularJS, ensuring modularity and scalability.",
-                "Collaborated with the back-end team to integrate RESTful APIs and ensure a seamless user experience.",
-                "Contributed to the deployment of native Android and iOS apps as part of the broader multi-platform product strategy."
-            ]
-        }
-    ]
+	"title": "Personal Projects",
+	"list": [
+		{
+			"role": "Creator / Full Stack Developer",
+			"company": "Hero Hubs",
+			"period": "2025 - Present",
+			"description": "Creator of Hero Hubs, a professional identity for freelance developers offering high-quality software development. We specialize in building enterprise applications, e-commerce platforms, and scalable cloud-native solutions with a strong emphasis on performance and serverless architecture.",
+			"achievements": [
+				"Led the design and development of enterprise-grade applications tailored to business-critical workflows and high-performance requirements.",
+				"Built scalable and maintainable architectures using serverless technologies to reduce infrastructure complexity and operational costs.",
+				"Provided strategic and technical consulting to help B2B clients modernize their software stack and infrastructure."
+			]
+		},
+		{
+			"role": "Co-Founder / Frontend Developer",
+			"company": "FoodnWords S.r.l.s.",
+			"period": "2015 - 2017",
+			"description": "Co-founded a startup focused on language learning. Designed and developed the entire front-end architecture of the platform using AngularJS, ensuring a responsive and consistent experience across web and mobile interfaces.",
+			"achievements": [
+				"Designed and developed the front-end architecture using AngularJS, ensuring modularity and scalability.",
+				"Collaborated with the back-end team to integrate RESTful APIs and ensure a seamless user experience.",
+				"Contributed to the deployment of native Android and iOS apps as part of the broader multi-platform product strategy."
+			]
+		}
+	]
 }

@@ -7,5 +7,6 @@
     "trailingComma": "es5",
     "endOfLine": "lf",
     "singleAttributePerLine": true,
+    "useTabs": true,
     "tabWidth": 4
 }
