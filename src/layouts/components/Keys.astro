@@ -1,6 +1,6 @@
 ---
 const { className } = Astro.props
-import keyCompetencies from '@/config/key-competencies.json'
+import keys from '@/config/keys.json'
 ---
 
 <section
@@ -9,10 +9,10 @@ import keyCompetencies from '@/config/key-competencies.json'
 >
     <div class="rounded border border-border p-12 lg:p-9 h-full">
         <ul class="flex items-center space-x-4">
-            <h4 class="text-primary">Keys</h4>
+            <h4 class="text-primary">{keys.title}</h4>
         </ul>
         <p class="my-4">
-            {keyCompetencies.map((key) => <li class="my-5">{key}</li>)}
+            {keys.list.map((key) => <li class="my-5">{key}</li>)}
         </p>
     </div>
 </section>

@@ -9,10 +9,10 @@ import interests from '@/config/interests.json'
 >
     <div class="rounded border border-border p-12 lg:p-9 h-full">
         <ul class="flex items-center space-x-4">
-            <h4 class="text-primary">Interests</h4>
+            <h4 class="text-primary">{interests.title}</h4>
         </ul>
         <p class="my-4">
-            {interests.map((edu) => <li class="mb-5">{edu}</li>)}
+            {interests.list.map((edu) => <li class="mb-5">{edu}</li>)}
         </p>
     </div>
 </section>

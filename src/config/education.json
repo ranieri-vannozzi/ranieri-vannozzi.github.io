@@ -1,26 +1,29 @@
-[
-    {
-        "degree": "English Language and Culture - B2 Level",
-        "institution": "Formatica Scarl",
-        "period": "2025",
-        "details": "Certificate recognised by the Italian Tuscany Region."
-    },
-    {
-        "degree": "Master in Project Management and Agile",
-        "institution": "24Ore Business School",
-        "period": "2023",
-        "details": ""
-    },
-    {
-        "degree": "Planning and Development of Web Applications",
-        "institution": "IDI Informatica",
-        "period": "2010",
-        "details": "640-hour course recognised by the Italian Tuscany Region."
-    },
-    {
-        "degree": "Information Engineering (interrupted)",
-        "institution": "Università degli Studi di Firenze",
-        "period": "2007",
-        "details": "Interrupted for personal reasons."
-    }
-]
+{
+    "title": "Education",
+    "degrees": [
+        {
+            "degree": "English Language and Culture - B2 Level",
+            "institution": "Formatica Scarl",
+            "period": "2025",
+            "details": "Certificate recognised by the Italian Tuscany Region."
+        },
+        {
+            "degree": "Master in Project Management and Agile",
+            "institution": "24Ore Business School",
+            "period": "2023",
+            "details": ""
+        },
+        {
+            "degree": "Planning and Development of Web Applications",
+            "institution": "IDI Informatica",
+            "period": "2010",
+            "details": "640-hour course recognised by the Italian Tuscany Region."
+        },
+        {
+            "degree": "Information Engineering (interrupted)",
+            "institution": "Università degli Studi di Firenze",
+            "period": "2007",
+            "details": "Interrupted for personal reasons."
+        }
+    ]
+}

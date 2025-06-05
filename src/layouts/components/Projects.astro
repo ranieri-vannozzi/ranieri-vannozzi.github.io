@@ -2,16 +2,15 @@
 const { className } = Astro.props
 import projects from '@/config/projects.json'
 ---
-
 <section
     class={className}
     id="projects"
 >
     <div class="rounded border border-border p-12 lg:p-9 h-full">
-        <h4 class="text-primary mb-4">Personal Projects</h4>
+        <h4 class="text-primary mb-4">{projects.title}</h4>
         <ul class="space-y-6">
             {
-                projects.map((prj) => (
+                projects.list.map((prj) => (
                     <li class="border-b border-border pb-4 last:border-b-0">
                         <h5 class="text-md font-bold">{prj.role}</h5>
                         <p class="text-muted-foreground">

@@ -16,12 +16,12 @@ export interface IEducation {
 >
     <div class="rounded border border-border p-12 lg:p-9 h-full">
         <ul class="flex items-center space-x-4">
-            <h4 class="text-primary">Education</h4>
+            <h4 class="text-primary">{education.title}</h4>
         </ul>
         <p class="my-4">
             <ul class="space-y-6">
                 {
-                    education.map((edu: IEducation) => (
+                    education.degrees.map((edu: IEducation) => (
                         <li class=" border-border ">
                             <h6 class="">{edu.degree}</h6>
                             <p class="text-muted-foreground">

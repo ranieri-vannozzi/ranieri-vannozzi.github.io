@@ -1,7 +1,28 @@
 {
-    "leadershipAndManagement": ["IT Management", "Project Management", "Planning & Prioritization"],
-    "backendTechnologies": ["Java", "Kotlin", "Node.js", "Bun", "Spring Boot", "PostgreSQL", "MySQL"],
-    "frontendTechnologies": ["Angular", "TypeScript", "JavaScript", "CSS", "HTMX", "JSX", "TSX", "Astro", "Tailwind CSS"],
-    "devOpsPractices": ["CI / CD", "Git / GitFlow", "GitHub", "GitLab", "Jenkins", "Docker", "Kubernetes"],
-    "cloudPlatforms": ["AWS", "Google Cloud Platform"]
+    "title": "Skills",
+    "list": [
+        {
+            "title": "Leadership",
+            "list": ["IT Management", "Project Management", "Planning & Prioritization"]
+        },
+        {
+            "title": "Cloud Platforms",
+            "list": ["Java", "Kotlin", "Node.js", "Bun", "Spring Boot", "PostgreSQL", "MySQL"]
+        },
+
+        {
+            "title": "Infrastructure",
+            "list": ["Angular", "TypeScript", "JavaScript", "CSS", "HTMX", "JSX", "TSX", "Astro", "Tailwind CSS"]
+        },
+
+        {
+            "title": "Backend Technologies",
+            "list": ["CI / CD", "Git / GitFlow", "GitHub", "GitLab", "Jenkins", "Docker", "Kubernetes"]
+        },
+
+        {
+            "title": "Frontend Technologies",
+            "list": ["AWS", "Google Cloud Platform"]
+        }
+    ]
 }

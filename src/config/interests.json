@@ -1,9 +1,12 @@
-[
-    "Exploring new technologies and development tools during personal time",
-    "Taking long road trips to discover new places and local cultures",
-    "Listening to a wide range of music, from rock to electronic and jazz",
-    "Spending time outdoors with my family and enjoying nature",
-    "Reading books across different genres",
-    "Working on personal projects and learning how to do things independently",
-    "Enjoying cooking and experimenting with new recipes"
-]
+{
+    "title": "Interests",
+    "list": [
+        "Exploring new technologies and development tools during personal time",
+        "Taking long road trips to discover new places and local cultures",
+        "Listening to a wide range of music, from rock to electronic and jazz",
+        "Spending time outdoors with my family and enjoying nature",
+        "Reading books across different genres",
+        "Working on personal projects and learning how to do things independently",
+        "Enjoying cooking and experimenting with new recipes"
+    ]
+}
