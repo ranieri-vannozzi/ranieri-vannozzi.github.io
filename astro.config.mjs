@@ -29,8 +29,13 @@ export default defineConfig({
 
 	integrations: [
 		react(),
+		mdx(),
 		sitemap(),
-
+		partytown({
+			config: {
+				forward: ['dataLayer.push'],
+			},
+		}),
 		AutoImport({
 			imports: [
 				'@/shortcodes/Button',
@@ -42,7 +47,6 @@ export default defineConfig({
 				'@/shortcodes/Tab',
 			],
 		}),
-		mdx(),
 	],
 	markdown: {
 		remarkPlugins: [
