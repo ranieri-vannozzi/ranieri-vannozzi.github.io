@@ -8,4 +8,4 @@ pre-commit:
           tags:
               - frontend
               - formatting
-          run: npx prettier . --write
+          run: npx prettier . --write && git add .
