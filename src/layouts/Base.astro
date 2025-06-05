@@ -30,11 +30,28 @@ export interface Props {
 
 // distructure frontmatters
 const { title, meta_title, description, image, noindex, canonical } = Astro.props
+const tid = config.site.google_analytics?.tracking_id
+const gaSrc = `https://www.googletagmanager.com/gtag/js?id=${tid}`
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			type="text/partytown"
+			async
+			src={gaSrc}
+		></script>
+		<script type="text/partytown">
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
+			gtag('config', { tid })
+		</script>
+
 		<!-- favicon -->
 		<link
 			rel="shortcut icon"

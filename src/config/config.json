@@ -4,7 +4,11 @@
 		"base_url": "https://ranierivan.github.io/",
 		"base_path": "/",
 		"trailing_slash": false,
-		"favicon": "/images/favicon.jpg"
+		"favicon": "/images/favicon.jpg",
+		"google_analytics": {
+			"enable": true,
+			"tracking_id": "G-FJBJX5MN7R"
+		}
 	},
 
 	"settings": {

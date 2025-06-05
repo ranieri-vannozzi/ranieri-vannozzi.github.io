@@ -1,6 +1,5 @@
 ---
 import ImageMod from '@/components/ImageMod.astro'
-import Pagination from '@/components/Pagination.astro'
 import Social from '@/components/Social.astro'
 import Contacts from '@/components/Contacts.astro'
 import Education from '@/components/Education.astro'
@@ -12,11 +11,9 @@ import Overwiev from '@/components/Overwiev.astro'
 import config from '@/config/config.json'
 import contacts from '@/config/contacts.json'
 import Base from '@/layouts/Base.astro'
-import { getSinglePage } from '@/lib/contentParser.astro'
 import { markdownify } from '@/lib/utils/textConverter'
 import Projects from '@/components/Projects.astro'
 
-const posts = await getSinglePage('posts')
 const { pagination } = config.settings
 const { name, image, designation, bio } = config.profile
 ---
@@ -72,12 +69,6 @@ const { name, image, designation, bio } = config.profile
 						<Contacts className="col-12 sm:col-12" />
 					</div>
 				</div>
-			</div>
-			<div class="mt-12">
-				<Pagination
-					totalPages={Math.ceil(posts.length / pagination)}
-					currentPage={1}
-				/>
 			</div>
 		</div>
 	</div>
