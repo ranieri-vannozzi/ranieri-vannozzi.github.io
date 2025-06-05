@@ -8,6 +8,7 @@ import remarkCollapse from 'remark-collapse'
 import remarkToc from 'remark-toc'
 import sharp from 'sharp'
 import config from './src/config/config.json'
+import partytown from '@astrojs/partytown'
 
 let highlighter
 async function getHighlighter() {
@@ -29,13 +30,8 @@ export default defineConfig({
 
 	integrations: [
 		react(),
-		mdx(),
 		sitemap(),
-		partytown({
-			config: {
-				forward: ['dataLayer.push'],
-			},
-		}),
+
 		AutoImport({
 			imports: [
 				'@/shortcodes/Button',
@@ -46,6 +42,12 @@ export default defineConfig({
 				'@/shortcodes/Tabs',
 				'@/shortcodes/Tab',
 			],
+		}),
+		mdx(),
+		partytown({
+			config: {
+				forward: ['dataLayer.push'],
+			},
 		}),
 	],
 	markdown: {
