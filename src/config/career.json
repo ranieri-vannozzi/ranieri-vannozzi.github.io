@@ -3,13 +3,14 @@
 	"jobs": [
 		{
 			"role": "Freelance Consultant",
-			"company": "Hero Hubs",
-			"period": "01/2025 - Present ",
-			"location": "Pistoia, Italy",
+			"company": "HeroHubs",
+			"period": "01/2025 - Present",
+			"location": "Remote",
 			"responsibilities": [
-				"Design and development of scalable, cloud-native and serverless applications with a full-stack approach",
-				"Architectural design, project coordination, and hands-on implementation of modern solutions leveraging AWS services such as Lambda, Cognito, S3, SES, and SST",
-				"Frontend and backend development using HTMX, JSX/TSX, Hono Framework, and Tailwind CSS, ensuring performance, maintainability, and rapid delivery through streamlined DevOps practices"
+				"Design, development and architectural consulting for cloud-native enterprise solutions",
+				"Node.js & Microservices: design and development of microservices architectures using NestJS and TypeScript, and a desktop payment checkout application built with Electron",
+				"Reactive Banking Platform: high-throughput banking solutions with Java and Spring WebFlux within a microservices ecosystem hosted on Azure",
+				"Modern Frontend & Cloud: web applications and frontend interfaces with Angular 21, HTMX, JSX/TSX and Tailwind CSS, plus cloud-native and serverless backend services on AWS (Lambda, Cognito, S3, SES, SST)"
 			]
 		},
 		{
@@ -28,7 +29,7 @@
 		},
 		{
 			"role": "Head of Software Development / Technical Leader / Senior Full Stack Developer",
-			"company": "Grey Solutions S.r.l.",
+			"company": "Greysolutions Srl",
 			"period": "09/2021 - 03/2023",
 			"location": "Milan, Italy",
 			"responsibilities": ["Projects management of organization", "Technical Leader"]
@@ -37,21 +38,21 @@
 			"role": "Team Lead - Senior Full Stack Developer",
 			"company": "Tech Solutions S.r.l.",
 			"period": "09/2020 - 09/2021",
-			"location": "Pistoia, Italy",
+			"location": "Milan, Italy",
 			"responsibilities": ["Team Lead on 'Contact Center' product"]
 		},
 		{
 			"role": "Senior Full Stack Java Developer",
 			"company": "Tech Solutions S.r.l.",
 			"period": "04/2020 - 08/2020",
-			"location": "Pistoia, Italy",
+			"location": "Milan, Italy",
 			"responsibilities": ["IT Consultant at BST – Banking Software Training", "Software developer on 'FinOffice Light' product"]
 		},
 		{
 			"role": "Team Lead - Senior Full Stack Developer",
 			"company": "Tech Solutions S.r.l.",
 			"period": "10/2019 - 03/2020",
-			"location": "Pistoia, Italy",
+			"location": "Milan, Italy",
 			"responsibilities": ["IT Consultant at Vipera P.l.c.", "Team Leader of Pistoia dev. group on 'NPL - Nuova Piattaforma Lottery' product"]
 		},
 		{

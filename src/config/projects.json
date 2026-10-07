@@ -2,14 +2,14 @@
 	"title": "Personal Projects",
 	"list": [
 		{
-			"role": "Creator / Full Stack Developer",
-			"company": "Hero Hubs",
+			"role": "Founder & Author",
+			"company": "HeroHubs",
 			"period": "2025 - Present",
-			"description": "Creator of Hero Hubs, a professional identity for freelance developers offering high-quality software development. We specialize in building enterprise applications, e-commerce platforms, and scalable cloud-native solutions with a strong emphasis on performance and serverless architecture.",
+			"description": "HeroHubs is my tech blog and the brand I work under as a freelance developer. I publish articles in English and Italian on software development, architecture and artificial intelligence, written from what I run into on real projects.",
 			"achievements": [
-				"Led the design and development of enterprise-grade applications tailored to business-critical workflows and high-performance requirements.",
-				"Built scalable and maintainable architectures using serverless technologies to reduce infrastructure complexity and operational costs.",
-				"Provided strategic and technical consulting to help B2B clients modernize their software stack and infrastructure."
+				"Published more than 50 articles in two languages on tools, architectural choices and AI, from Claude Code and open models to serverless platforms.",
+				"Designed and built the site with Astro: bilingual content, per-language RSS feeds and a fully static deployment on GitHub Pages.",
+				"Run the editorial workflow end to end, from writing and AI-assisted translation to cover design and LinkedIn promotion."
 			]
 		},
 		{

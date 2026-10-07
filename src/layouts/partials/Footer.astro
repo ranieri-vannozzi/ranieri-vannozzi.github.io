@@ -1,7 +1,7 @@
 ---
 import config from '@/config/config.json'
 import { markdownify } from '@/lib/utils/textConverter'
-const { copyright } = config.params
+const copyright = config.params.copyright.replace('{year}', String(new Date().getFullYear()))
 ---
 
 <footer class="pt-16 pb-16">

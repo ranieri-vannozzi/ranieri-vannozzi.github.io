@@ -3,6 +3,10 @@ name: Deploy Astro site to GitHub Pages
 on:
     push:
         branches: [main]
+    # Daily rebuild so the latest HeroHubs articles appear without a new commit
+    schedule:
+        - cron: '0 10 * * *'
+    workflow_dispatch:
 
 permissions:
     contents: write

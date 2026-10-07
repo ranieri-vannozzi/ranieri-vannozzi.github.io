@@ -1,0 +1,87 @@
+---
+import writing from '@/config/writing.json'
+
+const { className } = Astro.props
+
+interface Article {
+	title: string
+	link: string
+	description: string
+	date: Date
+	category: string
+}
+
+// Decodes the XML entities the feed generator emits in text nodes
+const decode = (text: string) =>
+	text
+		.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+		.replace(/&lt;/g, '<')
+		.replace(/&gt;/g, '>')
+		.replace(/&quot;/g, '"')
+		.replace(/&apos;|&#39;/g, "'")
+		.replace(/&amp;/g, '&')
+		.trim()
+
+const readTag = (item: string, tag: string) => decode(item.match(new RegExp(`<${tag}>([\\s\\S]*?)</${tag}>`))?.[1] ?? '')
+
+// The feed is read at build time, so a failure must never break the build
+let articles: Article[] = []
+try {
+	const response = await fetch(writing.feedUrl)
+	if (response.ok) {
+		const xml = await response.text()
+		articles = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)]
+			.map(([, item]) => ({
+				title: readTag(item, 'title'),
+				link: readTag(item, 'link'),
+				description: readTag(item, 'description'),
+				date: new Date(readTag(item, 'pubDate')),
+				category: readTag(item, 'category'),
+			}))
+			.filter((article) => article.title && article.link)
+			.slice(0, writing.limit)
+	}
+} catch (error) {
+	console.warn(`Unable to read ${writing.feedUrl}:`, error)
+}
+
+const formatDate = (date: Date) => (isNaN(date.getTime()) ? '' : date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' }))
+---
+
+<section
+	class={className}
+	id="writing"
+>
+	<div class="rounded border border-border p-12 lg:p-9 h-full">
+		<h4 class="text-primary mb-4">{writing.title}</h4>
+		<p class="mb-6">{writing.description}</p>
+		<ul class="space-y-6">
+			{
+				articles.map((article) => (
+					<li class="border-b border-border pb-4 last:border-b-0">
+						<p class="text-muted-foreground text-sm">{[article.category, formatDate(article.date)].filter(Boolean).join(' · ')}</p>
+						<h5 class="text-md font-bold mt-1">
+							<a
+								href={article.link}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="hover:text-primary"
+							>
+								{article.title}
+							</a>
+						</h5>
+						<p class="mt-2">{article.description}</p>
+					</li>
+				))
+			}
+		</ul>
+		<a
+			href={writing.blogUrl}
+			target="_blank"
+			rel="noopener noreferrer"
+			class="inline-block mt-6 text-primary hover:underline"
+		>
+			{writing.blogLabel} &rarr;
+		</a>
+	</div>
+</section>

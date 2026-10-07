@@ -1,0 +1,8 @@
+{
+	"title": "Latest Articles",
+	"description": "I write about software development, architecture and artificial intelligence on HeroHubs, in English and Italian.",
+	"feedUrl": "https://herohubs.it/en/rss.xml",
+	"blogUrl": "https://herohubs.it/en/blog",
+	"blogLabel": "All articles on HeroHubs",
+	"limit": 4
+}

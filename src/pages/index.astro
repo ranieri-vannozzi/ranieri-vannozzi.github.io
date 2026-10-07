@@ -13,6 +13,7 @@ import contacts from '@/config/contacts.json'
 import Base from '@/layouts/Base.astro'
 import { markdownify } from '@/lib/utils/textConverter'
 import Projects from '@/components/Projects.astro'
+import Writing from '@/components/Writing.astro'
 
 const { pagination } = config.settings
 const { name, image, designation, bio } = config.profile
@@ -66,6 +67,7 @@ const { name, image, designation, bio } = config.profile
 						<Skills className="col-12 sm:col-4" />
 						<Interests className="col-12 sm:col-6" />
 						<Projects className="col-12 sm:col-6" />
+						<Writing className="col-12 sm:col-12" />
 						<Contacts className="col-12 sm:col-12" />
 					</div>
 				</div>
