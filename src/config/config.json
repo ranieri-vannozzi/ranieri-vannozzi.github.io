@@ -4,7 +4,7 @@
 		"base_url": "https://ranierivannozzi.com",
 		"base_path": "/",
 		"trailing_slash": false,
-		"favicon": "/images/favicon.jpg",
+		"favicon": "/images/favicon.png",
 		"google_analytics": {
 			"enable": true,
 			"tracking_id": "G-FJBJX5MN7R"
