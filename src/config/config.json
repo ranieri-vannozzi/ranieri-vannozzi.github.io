@@ -22,7 +22,7 @@
 	},
 	"params": {
 		"contact_form_action": "#",
-		"copyright": "Copyright © {year} - Ranieri Vannozzi - P.Iva 02103710477"
+		"copyright": "Copyright © {year} · Ranieri Vannozzi · P.IVA 02103710477"
 	},
 	"disqus": {
 		"enable": false,
