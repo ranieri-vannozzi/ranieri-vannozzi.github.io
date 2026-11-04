@@ -2,103 +2,81 @@
 	"title": "Career",
 	"jobs": [
 		{
-			"role": "Freelance Consultant",
+			"role": "Freelance Tech Lead & Software Architect",
 			"company": "HeroHubs",
 			"period": "01/2025 - Present",
 			"location": "Remote",
 			"responsibilities": [
-				"Design, development and architectural consulting for cloud-native enterprise solutions",
-				"Node.js & Microservices: design and development of microservices architectures using NestJS and TypeScript, and a desktop payment checkout application built with Electron",
-				"Reactive Banking Platform: high-throughput banking solutions with Java and Spring WebFlux within a microservices ecosystem hosted on Azure",
-				"Modern Frontend & Cloud: web applications and frontend interfaces with Angular 21, HTMX, JSX/TSX and Tailwind CSS, plus cloud-native and serverless backend services on AWS (Lambda, Cognito, S3, SES, SST)"
+				"Architecture, development and technical leadership for enterprise clients",
+				"Designed and developed microservices backends with NestJS and TypeScript, including scheduled integrations that keep customer registries in sync",
+				"Contributed to a reactive banking platform with Java and Spring WebFlux in a microservices ecosystem on Azure",
+				"Built a cross-platform checkout and booking system for restaurants: an Electron desktop POS and an Ionic/Capacitor mobile app sharing the same backend",
+				"Built backend services on AWS using Cognito for authentication, S3 for storage and SES for transactional email, protected public APIs at the edge with Cloudflare, and delivered frontends with Angular 21, HTMX and Tailwind CSS"
 			]
 		},
 		{
 			"role": "Head of IT Platform Product Development",
-			"company": "Polaris Engineering S.p.a.",
-			"period": "01/2024 - 10/2024",
+			"company": "Polaris Engineering Spa",
+			"period": "01/2024 - 11/2024",
 			"location": "Milan, Italy",
-			"responsibilities": ["Head of IT Platform Product Development on 'Assistant' product"]
-		},
-		{
-			"role": "Project Manager / Technical Leader",
-			"company": "Polaris Engineering S.p.a.",
-			"period": "03/2023 - 01/2024",
-			"location": "Milan, Italy",
-			"responsibilities": ["Technical Leader on 'Assistant' product"]
-		},
-		{
-			"role": "Head of Software Development / Technical Leader / Senior Full Stack Developer",
-			"company": "Greysolutions Srl",
-			"period": "09/2021 - 03/2023",
-			"location": "Milan, Italy",
-			"responsibilities": ["Projects management of organization", "Technical Leader"]
-		},
-		{
-			"role": "Team Lead - Senior Full Stack Developer",
-			"company": "Tech Solutions S.r.l.",
-			"period": "09/2020 - 09/2021",
-			"location": "Milan, Italy",
-			"responsibilities": ["Team Lead on 'Contact Center' product"]
-		},
-		{
-			"role": "Senior Full Stack Java Developer",
-			"company": "Tech Solutions S.r.l.",
-			"period": "04/2020 - 08/2020",
-			"location": "Milan, Italy",
-			"responsibilities": ["IT Consultant at BST – Banking Software Training", "Software developer on 'FinOffice Light' product"]
-		},
-		{
-			"role": "Team Lead - Senior Full Stack Developer",
-			"company": "Tech Solutions S.r.l.",
-			"period": "10/2019 - 03/2020",
-			"location": "Milan, Italy",
-			"responsibilities": ["IT Consultant at Vipera P.l.c.", "Team Leader of Pistoia dev. group on 'NPL - Nuova Piattaforma Lottery' product"]
-		},
-		{
-			"role": "Team Lead - Senior Full Stack Developer",
-			"company": "Onetech S.r.l.",
-			"period": "10/2017 - 10/2019",
-			"location": "Florence, Italy",
-			"responsibilities": ["IT Consultant at Vipera P.l.c.", "Team Leader of Florence dev. group on 'NPS - Nuova Piattaforma Servizi' product"]
-		},
-		{
-			"role": "Senior Full Stack Developer",
-			"company": "Onetech S.r.l.",
-			"period": "01/2017 - 10/2017",
-			"location": "Florence, Italy",
-			"responsibilities": ["IT Consultant at Vipera P.l.c.", "Software developer on 'MoRe - Motif Reward' product"]
-		},
-		{
-			"role": "Full Stack Developer",
-			"company": "Onetech S.r.l.",
-			"period": "10/2012 - 01/2017",
-			"location": "Florence, Italy",
 			"responsibilities": [
-				"IT Consultant at Infogroup S.c.p.A.",
-				"Software developer on 'Ncg - Nuova Contabilità Generale', 'Manuale Operativo Voci Contabili', 'Gti - Gestione Transitori Interprocedurali', 'eBass', 'MPP - Monitor Processo Produttivo' products"
+				"Internal platform for operations, warehouse and planning at an industrial engineering company",
+				"Led the development team, owning planning, prioritization and the Scrum process",
+				"Oversaw a Kotlin and Spring Boot platform with an Angular frontend, PostgreSQL and MongoDB, and the move from Keycloak to AWS Cognito",
+				"Delivered an Android app on Datalogic handheld scanners for barcode reading and warehouse operations",
+				"Supervised deployments and releases, staying hands-on on Angular when needed"
 			]
 		},
 		{
-			"role": "Developer",
-			"company": "Onetech S.r.l.",
-			"period": "07/2012 - 10/2012",
-			"location": "Florence, Italy",
-			"responsibilities": ["Software developer on 'De Manager' product"]
+			"role": "Project Manager | Front-End Tech Lead",
+			"company": "Polaris Engineering Spa",
+			"period": "03/2023 - 01/2024",
+			"location": "Milan, Italy",
+			"responsibilities": [
+				"Led a team of 4 on Angular and Bryntum Scheduler for planning interfaces, and was promoted to Head of IT Platform Product Development after 10 months",
+				"Tech stack: Kotlin, Spring Boot, Angular, Android, PostgreSQL, MongoDB, Keycloak, AWS Cognito, Jira"
+			]
 		},
 		{
-			"role": "Developer",
-			"company": "Onetech S.r.l.",
-			"period": "07/2011 - 07/2012",
-			"location": "Florence, Italy",
-			"responsibilities": ["Software developer on 'Sia Configuration System' product"]
+			"role": "Head of Software Development",
+			"company": "Grey Solutions Srl, formerly Onetech Srl and Tech Solutions Srl",
+			"period": "06/2021 - 03/2023",
+			"location": "Milan, Italy",
+			"responsibilities": [
+				"Software house for finance, banking and industrial clients, including Intesa Sanpaolo, Sisal, SIA and Cerved",
+				"Owned technical strategy and client relationships, led development teams across web and Android projects, supervised releases and stayed hands-on in development",
+				"Tech stack across the Grey Solutions years: Java, J2EE, Spring Boot, OSGi, GWT, JavaScript, AngularJS, Angular, Oracle, PostgreSQL, Android"
+			]
 		},
 		{
-			"role": "Developer",
-			"company": "Onetech S.r.l.",
-			"period": "11/2009 - 07/2011",
+			"role": "Team Lead | Senior Full Stack Developer",
+			"company": "Grey Solutions Srl, formerly Onetech Srl and Tech Solutions Srl",
+			"period": "01/2017 - 05/2021",
+			"location": "Florence and Milan, Italy",
+			"responsibilities": [
+				"Led the consultant team developing partner integrations, such as telecom operators, on Sisal's retail payment platform, an existing modular OSGi architecture used across its nationwide network of points of sale",
+				"Worked as a consultant through Vipera plc"
+			]
+		},
+		{
+			"role": "Java/J2EE Analyst-Developer",
+			"company": "Grey Solutions Srl, formerly Onetech Srl and Tech Solutions Srl",
+			"period": "10/2012 - 12/2016",
 			"location": "Florence, Italy",
-			"responsibilities": ["Software developer on 'Portafoglio Clienti' product"]
+			"responsibilities": [
+				"Consultant for Intesa Sanpaolo",
+				"Developed NCG (Nuova Contabilità Generale), the new general ledger platform covering the entire general accounting of the Intesa Sanpaolo Group, as part of a 25-person team"
+			]
+		},
+		{
+			"role": "QA Tester, then Full Stack Developer",
+			"company": "Grey Solutions Srl, formerly Onetech Srl and Tech Solutions Srl",
+			"period": "05/2008 - 09/2012",
+			"location": "Florence, Italy",
+			"responsibilities": [
+				"Started in QA on a financial product for Milano Finanza",
+				"Moved into development on products for Cerved and later SIA, building web and single-page applications"
+			]
 		}
 	]
 }

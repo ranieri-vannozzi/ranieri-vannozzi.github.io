@@ -4,7 +4,8 @@
 		{
 			"role": "Founder & Author",
 			"company": "HeroHubs",
-			"period": "2025 - Present",
+			"url": "https://herohubs.it/en",
+			"period": "01/2025 - Present",
 			"description": "HeroHubs is my tech blog and the brand I work under as a freelance developer. I publish articles in English and Italian on software development, architecture and artificial intelligence, written from what I run into on real projects.",
 			"achievements": [
 				"Published more than 50 articles in two languages on tools, architectural choices and AI, from Claude Code and open models to serverless platforms.",
@@ -15,8 +16,8 @@
 		{
 			"role": "Co-Founder / Frontend Developer",
 			"company": "FoodnWords S.r.l.s.",
-			"period": "2015 - 2017",
-			"description": "Co-founded a startup focused on language learning. Designed and developed the entire front-end architecture of the platform using AngularJS, ensuring a responsive and consistent experience across web and mobile interfaces.",
+			"period": "09/2014 - 02/2020",
+			"description": "Co-founded a language-learning platform built with Java and Spring Boot APIs, an AngularJS frontend and native Android and iOS apps. I designed and developed the entire front-end architecture, ensuring a responsive and consistent experience across web and mobile interfaces.",
 			"achievements": [
 				"Designed and developed the front-end architecture using AngularJS, ensuring modularity and scalability.",
 				"Collaborated with the back-end team to integrate RESTful APIs and ensure a seamless user experience.",
