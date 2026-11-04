@@ -14,7 +14,7 @@ import Social from './Social.astro'
 		<div class="flex md:flex-row justify-between">
 			{/* Email a sinistra */}
 			<div class="w-full">
-				<p class="">
+				<ul class="list-none">
 					{
 						contacts.emails.map((email: string) => (
 							<li>
@@ -27,7 +27,7 @@ import Social from './Social.astro'
 							</li>
 						))
 					}
-				</p>
+				</ul>
 			</div>
 
 			<div class="hidden sm:block">

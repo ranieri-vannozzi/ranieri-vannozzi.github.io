@@ -39,18 +39,18 @@
 		},
 		{
 			"role": "Head of Software Development",
-			"company": "Grey Solutions Srl, formerly Onetech Srl and Tech Solutions Srl",
+			"company": "Grey Solutions Srl",
 			"period": "06/2021 - 03/2023",
 			"location": "Milan, Italy",
 			"responsibilities": [
-				"Software house for finance, banking and industrial clients, including Intesa Sanpaolo, Sisal, SIA and Cerved",
+				"Grey Solutions, formerly Onetech Srl and Tech Solutions Srl, is a software house for finance, banking and industrial clients, including Intesa Sanpaolo, Sisal, SIA and Cerved",
 				"Owned technical strategy and client relationships, led development teams across web and Android projects, supervised releases and stayed hands-on in development",
 				"Tech stack across the Grey Solutions years: Java, J2EE, Spring Boot, OSGi, GWT, JavaScript, AngularJS, Angular, Oracle, PostgreSQL, Android"
 			]
 		},
 		{
 			"role": "Team Lead | Senior Full Stack Developer",
-			"company": "Grey Solutions Srl, formerly Onetech Srl and Tech Solutions Srl",
+			"company": "Grey Solutions Srl",
 			"period": "01/2017 - 05/2021",
 			"location": "Florence and Milan, Italy",
 			"responsibilities": [
@@ -60,7 +60,7 @@
 		},
 		{
 			"role": "Java/J2EE Analyst-Developer",
-			"company": "Grey Solutions Srl, formerly Onetech Srl and Tech Solutions Srl",
+			"company": "Grey Solutions Srl",
 			"period": "10/2012 - 12/2016",
 			"location": "Florence, Italy",
 			"responsibilities": [
@@ -70,7 +70,7 @@
 		},
 		{
 			"role": "QA Tester, then Full Stack Developer",
-			"company": "Grey Solutions Srl, formerly Onetech Srl and Tech Solutions Srl",
+			"company": "Grey Solutions Srl",
 			"period": "05/2008 - 09/2012",
 			"location": "Florence, Italy",
 			"responsibilities": [
