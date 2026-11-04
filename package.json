@@ -20,7 +20,6 @@
 		"@justinribeiro/lite-youtube": "^1.7.1",
 		"astro": "5.7.5",
 		"astro-auto-import": "^0.4.4",
-		"astro-font": "^1.1.0",
 		"date-fns": "^4.1.0",
 		"disqus-react": "^1.1.6",
 		"github-slugger": "^2.0.0",
