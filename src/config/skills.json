@@ -2,24 +2,54 @@
 	"title": "Skills",
 	"list": [
 		{
-			"title": "Leadership",
-			"list": ["IT Management", "Project Management", "Planning & Prioritization"]
+			"title": "Leadership & Delivery",
+			"list": [
+				"Team Leadership & Mentoring",
+				"Agile / Scrum",
+				"Project Management",
+				"Planning & Prioritization",
+				"Code Review",
+				"Release Management",
+				"Jira"
+			]
 		},
 		{
-			"title": "Cloud Platforms",
-			"list": ["AWS", "Azure", "Google Cloud Platform"]
+			"title": "Architecture",
+			"list": ["Microservices", "Hexagonal Architecture", "Reactive Systems", "OSGi", "Kafka", "REST API Design", "Cloud-Native Design"]
 		},
 		{
-			"title": "Infrastructure",
-			"list": ["CI / CD", "Git / GitFlow", "GitHub", "GitLab", "Jenkins", "Docker", "Kubernetes"]
+			"title": "Backend",
+			"list": ["Java", "Kotlin", "Spring Boot", "Spring WebFlux", "Hibernate", "Maven / Gradle", "Node.js", "NestJS", "TypeScript"]
 		},
 		{
-			"title": "Backend Technologies",
-			"list": ["Java", "Kotlin", "Spring Boot", "Spring WebFlux", "Node.js", "NestJS", "Bun", "PostgreSQL", "MySQL"]
+			"title": "Frontend & Mobile",
+			"list": ["Angular", "RxJS", "Nx", "HTMX", "Tailwind CSS", "Electron", "Ionic / Capacitor", "Android"]
 		},
 		{
-			"title": "Frontend Technologies",
-			"list": ["Angular", "Nx", "TypeScript", "JavaScript", "Electron", "CSS", "HTMX", "JSX", "TSX", "Astro", "Tailwind CSS"]
+			"title": "Data",
+			"list": ["PostgreSQL", "MongoDB", "R2DBC", "MySQL", "Supabase"]
+		},
+		{
+			"title": "Security & Identity",
+			"list": ["Keycloak", "AWS Cognito", "Supabase Auth", "OAuth 2.0 / OpenID Connect"]
+		},
+		{
+			"title": "Cloud & DevOps",
+			"list": [
+				"AWS (Cognito, S3, SES)",
+				"Azure",
+				"Google Cloud Platform",
+				"Cloudflare",
+				"Infrastructure as Code (OpenTofu / Terraform)",
+				"Docker",
+				"Kubernetes",
+				"Railway",
+				"CI / CD"
+			]
+		},
+		{
+			"title": "AI",
+			"list": ["AI-Assisted Development", "AI-Driven Process Automation", "Prompt Engineering"]
 		}
 	]
 }

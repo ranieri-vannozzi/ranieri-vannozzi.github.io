@@ -1,5 +1,6 @@
 ---
 const { className } = Astro.props
+import DynamicIcon from '@/helpers/DynamicIcon'
 import projects from '@/config/projects.json'
 ---
 
@@ -15,7 +16,24 @@ import projects from '@/config/projects.json'
 					<li class="border-b border-border pb-4 last:border-b-0">
 						<h5 class="text-md font-bold">{prj.role}</h5>
 						<p class="text-muted-foreground">
-							{prj.company} <br />
+							{prj.url ? (
+								<a
+									href={prj.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="inline-flex items-center gap-2 hover:text-primary"
+									aria-label={`${prj.company} (opens in a new tab)`}
+								>
+									{prj.company}
+									<DynamicIcon
+										className="inline-block text-xs"
+										icon="FaArrowUpRightFromSquare"
+									/>
+								</a>
+							) : (
+								prj.company
+							)}
+							<br />
 							{prj.period}
 						</p>
 						<p class="mt-2">{prj.description}</p>
