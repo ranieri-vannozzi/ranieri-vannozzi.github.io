@@ -13,10 +13,13 @@ interface Props {
 	format?: 'auto' | 'avif' | 'jpeg' | 'png' | 'svg' | 'webp'
 	class?: string
 	style?: any
+	// Pixel densities to generate, e.g. [1, 2, 3] for sharp rendering on high-density screens
+	densities?: number[]
+	quality?: number
 }
 
 // Destructuring Astro.props to get the component's props
-let { src, alt, width, height, loading, decoding, class: className, format, style } = Astro.props
+let { src, alt, width, height, loading, decoding, class: className, format, style, densities, quality } = Astro.props
 
 src = `/public${src}`
 
@@ -42,6 +45,8 @@ const isValidPath = images[src] ? true : false
 			class={className}
 			format={format}
 			style={style}
+			densities={densities}
+			quality={quality}
 		/>
 	)
 }
