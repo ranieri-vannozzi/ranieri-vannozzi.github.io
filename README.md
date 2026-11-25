@@ -1,6 +1,6 @@
 # ranierivannozzi.com
 
-Source code of [ranierivannozzi.com](https://ranierivannozzi.com), the personal profile of Ranieri Vannozzi, tech lead and software architect.
+Source code of [ranierivannozzi.com](https://ranierivannozzi.com), the personal profile of Ranieri Vannozzi, tech lead and senior software engineer.
 
 The site is a single page online CV: overview, education, key skills, career, skills, personal projects, interests, the latest articles from the [HeroHubs](https://herohubs.it) blog and contacts.
 
