@@ -6,7 +6,7 @@
 			"company": "HeroHubs",
 			"url": "https://herohubs.it/en",
 			"period": "01/2025 - Present",
-			"description": "HeroHubs is my tech blog and the brand I work under as a freelance tech lead and software architect. I publish articles in English and Italian on software development, architecture and artificial intelligence, written from what I run into on real projects.",
+			"description": "HeroHubs is my tech blog and the brand I work under as a freelance tech lead and senior software engineer. I publish articles in English and Italian on software development, architecture and artificial intelligence, written from what I run into on real projects.",
 			"achievements": [
 				"Published more than 50 articles in two languages on tools, architectural choices and AI, from Claude Code and open models to serverless platforms.",
 				"Designed and built the site with Astro: bilingual content, per-language RSS feeds and a fully static deployment on GitHub Pages.",
