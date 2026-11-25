@@ -1,10 +1,10 @@
 {
 	"title": "Keys",
 	"list": [
-		"Software Architecture",
 		"Technical Leadership",
-		"Team Leadership & Mentoring",
 		"Hands-on Full Stack Development",
+		"Software Architecture",
+		"Team Leadership & Mentoring",
 		"Planning, Delivery & Release Management",
 		"Agile / Scrum"
 	]
